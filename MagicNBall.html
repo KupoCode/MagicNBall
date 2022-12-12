@@ -1,0 +1,281 @@
+<html>
+  <head>
+    
+
+    <div id="ww_ed996762076a0" v='1.3' loc='id' a='{"t":"ticker","lang":"en","sl_lpl":1,"ids":["wl705"],"font":"Times","sl_ics":"one_a","sl_sot":"fahrenheit","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>Weather Data Source: <a href="https://sharpweather.com/weather_west_virginia/week/" id="ww_ed996762076a0_u" target="_blank">7 day weather forecast West Virginia</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_ed996762076a0"></script>
+    
+    <title>Magic N Ball</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      input[type="text"] {
+        font-size: 16px;
+        padding: 10px;
+        width: 300px;
+      }
+
+      button {
+        font-size: 16px;
+        padding: 10px;
+      }
+
+      #ball {
+        width: 400px;
+        height: 400px;
+        background-image: url("8ball.png");
+        background-size: cover;
+        margin-bottom: 20px;
+        animation: shake 0.8s cubic-bezier(.36,.07,.19,.97) both;
+      }
+
+      #answer {
+        margin-top: 50%;
+        color: aliceblue;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      /* Dashed border */
+hr.dashed {
+  border-top: 3px dashed #bbb;
+}
+
+/* Dotted border */
+hr.dotted {
+  border-top: 3px dotted #bbb;
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
+
+      @keyframes shake {
+        10%, 90% {
+          transform: translate3d(-1px, 0, 0);
+        }
+
+        20%, 80% {
+          transform: translate3d(2px, 0, 0);
+        }
+
+        30%, 50%, 70% {
+          transform: translate3d(-4px, 0, 0);
+        }
+
+        40%, 60% {
+          transform: translate3d(4px, 0, 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Magic N Ball</h1>
+    <form>
+      <label for="question">Ask what your heart desires:</label>
+      <input type="text" id="question" />
+      <button type="submit">Get lost in the sauce </button>
+    </form>
+    <div id="ball">
+    <p id="answer"></p>
+    <script>
+      const answers = [
+      " As I see it, yes.",
+" Ask again later.",
+" Better not tell you now.",
+" Cannot predict now.",
+" Concentrate and ask again.",
+" Do not count on it.",
+" It is certain.",
+" It is decidedly so.",
+" Most likely.",
+" My reply is no.",
+" My sources say no.",
+" Outlook not so good.",
+" Outlook good.",
+" Reply hazy, try again.",
+" Signs point to yes.",
+" Very doubtful.",
+" Without a doubt.",
+" Yes.",
+" Yes – definitely.",
+" You may rely on it.",
+" How did you even get in this situation.",
+" Ask your mom - mom knows best.",
+" NO NO NO!!!.",
+" YES YES YES!!!.",
+" Bet your house on it.",
+" Leave.",
+" Perform a coin toss.",
+" If you believe really hard, yes.",
+" Not with that attitude.",
+" 'No ignorance, no sublimation' - Confucius.",
+" Only you can decide.",
+" 404 - Quote not found.",
+" Shake me harder mommy.",
+" Go for it; your life depends on it.",
+" Alas no.",
+" Your guess is as good as mine.",
+" SOMEHOW, no.",
+" You already know the answer.",
+" Is this really the question you should be asking?.",
+" Do pigs fly?.",
+"Get lost in the sauce.",
+"It is what it is.",
+" This knowledge is kept even from me.",
+" You're better off not knowing.",
+" Telling you now would spoil all the fun.",
+" “_______” the blank response spells disaster.",
+" Only once the gods intervene.",
+" At sundown the answer will be clear.",
+" Fuck no.",
+" Why are you asking a toy to determine your choices?.",
+" Fuck it, what could go wrong?.",
+" Jesus Christ, No!.",
+" You must be either stupid or desperate to ask me.",
+" Help I'm alive and scared.",
+"You're done!.",
+" Sssuuuuurrreee?.",
+" HA- No.",
+" God, Yes.",
+" Hai.",
+" Iie.",
+" Ja.",
+" Nein.",
+"42.",
+" A definite maybe, possibly.",
+" Ask me again in 10 minutes.",
+" Could you rephrase the question?.",
+" Don't hold your breath.",
+" How committed are you to this plan of action?.",
+" How could it possibly go wrong?.",
+" Run! Now! Don't look back!.",
+" The odds are 3720 to 1 against.",
+" We have been trying to reach you about your car's extended warranty.",
+" You have a better chance of being struck by lightning.",
+" Only if you believe.",
+" Once in a blue moon.",
+" Provided no one notices, yes.",
+" It wouldn’t be the right thing to do, but sure.",
+" Oh, that’s awful! How can you even ask that? But yeah, depressingly.",
+"That feels forced.",
+" Why do I need to know this?.",
+" to be honest this problem sounds like something that is beyond my help, you should see a psychiatrist or something.",
+" Ask me again yesterday.",
+" Fuck around and find out!.",
+" Bitch, I might!.",
+" Play stupid games, win stupid prizes.",
+" Ours is not to reason why.  Ours is but to do and die.",
+" For great justice! Take off every zig!.",
+" Set it on fire!.",
+" Consult a physician if symptoms persist.",
+" Throw a bigger rock at it.",
+" That sounds like a you problem.",
+" I won't tell if you dont.",
+" Let's not and say we did.",
+" I don't know! Ask your Father!.",
+" Dancer's choice.",
+" It's your funeral.",
+"https://www.youtube.com/watch?v=dQw4w9WgXcQ.",
+" Who am I to get in the way of a good time?.",
+" Maybe you should sleep on it.",
+" Mom said no.",
+"https://kupocode.github.io/MagicNBall/SecretPoetry"
+      ];
+  
+      const form = document.querySelector("form");
+      const ball = document.getElementById("ball");
+      const answer = document.getElementById("answer");
+  
+      form.addEventListener("submit", e => {
+        e.preventDefault();
+  
+        // Show the 8 ball and animate it
+        ball.style.display = "block";
+        ball.classList.add("shake");
+  
+        // Select a random answer and display it
+        const selectedAnswer = answers[Math.floor(Math.random() * answers.length)];
+        answer.innerHTML = selectedAnswer;
+      });
+  
+      ball.addEventListener("animationend", () => {
+        // Remove the animation class when the animation ends
+        ball.classList.remove("shake");
+      });
+    </script>
+    </div>
+  </body>
+
+
+  <hr class="rounded">
+
+  <div class="about-section">
+    <h1>About this website</h1>
+    <p>This shoddily thrown together magic 8 ball concept has a 100 different responses because apparently that's fun. </p>
+    <p> Type in what your heart desires and hit the button for a unique, never before seen answer... maybe.</p>
+    <p>Also the weather as the top because apparently it needed to have something useful.</p>
+  </div>
+
+
+<hr class="rounded">
+  
+  <h2 style="text-align:center">Our Team</h2>
+  
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <hr class="rounded">
+        <h2>S</h2>
+        <img src="Kupo.jpg" alt="???" style="width:100%">
+        <div class="container">
+          
+          <p class="title">CEO & Founder</p>
+          <p>A delicate flower, person who made this.</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  
+    <hr class="rounded">
+
+    <div class="column">
+      <div class="card">
+        <h2>N</h2>
+        <img src="N.jpg" alt="Mike" style="width:100%">
+        <div class="container">
+          
+          <p class="title">Art Director</p>
+          <p>Feral Birthday Girl.</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+  </html>
